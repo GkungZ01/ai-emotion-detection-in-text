@@ -27,18 +27,18 @@ def importDataSetCsv(filename: str, text_column: str, emotions_column: str, emot
         for index, row in reader.iterrows():
             texts.append(row[text_column])
             if emotions_keys:
-                labels.append(emotions_keys[int(row[emotions_column])])
+                labels.append(emotions_keys[int(row[emotions_column])].lower())
             else:
                 labels.append(row[emotions_column].lower())
 
 
 # นำเข้าข้อมูลจากไฟล์ CSV ต่างๆ
-importDataSetCsv("training", "text", "label", {
-                 0: 'Sadnessness', 1: 'happy', 2: 'love', 3: 'anger', 4: 'fear', 5: 'surprise'})
+importDataSetCsv("eng", "Comment", "Emotion")
 
-importDataSetCsv("Emotion_classify_Data", "Comment", "Emotion")
+importDataSetCsv("eng2", "text", "label", {
+                 0: 'Sadness', 1: 'happy', 2: 'love', 3: 'anger', 4: 'fear', 5: 'surprise'})
 
-importDataSetCsv("thai_emotion_dataset_large", "text", "emotion")
+importDataSetCsv("thai", "text", "emotion")
 
 # สร้าง vectorizer สำหรับแปลงข้อความเป็นเวกเตอร์
 vectorizer = CountVectorizer(
