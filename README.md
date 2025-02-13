@@ -17,7 +17,7 @@ pip install pythainlp pandas scikit-learn
 
 ## โครงสร้างโปรเจค
 
-``
+```
 project/
 │
 ├── main.py # โค้ดหลักของโปรแกรม
@@ -27,7 +27,7 @@ project/
 ├── training.csv
 ├── Emotion_classify_Data.csv
 └── thai_emotion_dataset_large.csv
-``
+```
 
 ## วิธีการใช้งาน
 
