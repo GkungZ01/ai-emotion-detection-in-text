@@ -1,4 +1,4 @@
-# Thai Text Emotion Classification
+# Emotion Detection in Text
 
 โปรแกรมวิเคราะห์อารมณ์จากข้อความภาษาไทย โดยใช้ Machine Learning (Multinomial Naive Bayes)
 
