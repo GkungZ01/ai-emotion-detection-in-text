@@ -1,0 +1,5 @@
+[
+  { "filename": "thai.csv", "text_column": "text", "emotions_column": "emotion" },
+  { "filename": "eng.csv", "text_column": "Comment", "emotions_column": "Emotion" },
+  { "filename": "eng2.csv", "text_column": "text", "emotions_column": "label" }
+]
