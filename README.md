@@ -70,7 +70,7 @@ Predicted emotion :: happy
 - PyThaiNLP
 - pandas
 - scikit-learn
-
+ 
 ## อ้างอิง
 
 - [PyThaiNLP](https://github.com/PyThaiNLP/pythainlp)
