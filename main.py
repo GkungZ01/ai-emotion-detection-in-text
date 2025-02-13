@@ -36,7 +36,7 @@ def importDataSetCsv(filename: str, text_column: str, emotions_column: str, emot
 importDataSetCsv("eng", "Comment", "Emotion")
 
 importDataSetCsv("eng2", "text", "label", {
-                 0: 'Sadness', 1: 'happy', 2: 'love', 3: 'anger', 4: 'fear', 5: 'surprise'})
+                 0: 'sadness', 1: 'happy', 2: 'love', 3: 'anger', 4: 'fear', 5: 'surprise'})
 
 importDataSetCsv("thai", "text", "emotion")
 
