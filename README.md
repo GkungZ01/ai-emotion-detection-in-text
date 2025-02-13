@@ -11,14 +11,13 @@
 
 1. ติดตั้ง dependencies ที่จำเป็น:
 
-```
-bash
+```bash
 pip install pythainlp pandas scikit-learn
 ```
 
 ## โครงสร้างโปรเจค
 
-```
+``
 project/
 │
 ├── main.py # โค้ดหลักของโปรแกรม
@@ -28,15 +27,14 @@ project/
 ├── training.csv
 ├── Emotion_classify_Data.csv
 └── thai_emotion_dataset_large.csv
-```
+``
 
 ## วิธีการใช้งาน
 
 1. เตรียมไฟล์ข้อมูลสำหรับเทรน (CSV) ในโฟลเดอร์ `dataset/csv/`
 2. รันโปรแกรม:
 
-```
-bash
+```bash
 python main.py
 ```
 
