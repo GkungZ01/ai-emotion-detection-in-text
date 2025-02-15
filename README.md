@@ -81,6 +81,8 @@ curl -X GET "http://localhost:9959/?text=base64encodedtext"
 
 ## 🎯 ตัวอย่างการใช้งาน
 
+### Python
+
 ```python
 import requests
 import base64
@@ -90,6 +92,19 @@ encoded_text = base64.b64encode(text.encode()).decode()
 response = requests.get(f"http://localhost:9959/?text={encoded_text}")
 print(f"Emotion: {response.json()['result']}")
 # Output: Emotion: happy
+```
+
+### JavaScript
+
+```javascript
+const text = "ฉันมีความสุขมากวันนี้";
+const encodedText = btoa(text);
+
+fetch(`http://localhost:9959/?text=${encodedText}`)
+  .then(response => response.json())
+  .then(data => console.log(`Emotion: ${data.result}`))
+  .catch(error => console.error('Error:', error));
+// Output: Emotion: happy
 ```
 
 ## 🛠 เทคโนโลยีที่ใช้
