@@ -1,1 +1,0 @@
-[{"filename": "thai.csv", "text_column": "text", "emotions_column": "emotion", "version": "2025-02-13T08:58:22Z"}, {"filename": "eng.csv", "text_column": "Comment", "emotions_column": "Emotion", "version": "2025-02-13T08:58:22Z"}, {"filename": "eng2.csv", "text_column": "text", "emotions_column": "label", "version": "2025-02-13T08:58:22Z"}]
