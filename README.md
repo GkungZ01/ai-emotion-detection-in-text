@@ -114,6 +114,10 @@ fetch(`http://localhost:9959/?text=${encodedText}`)
 - [scikit-learn](https://scikit-learn.org/) - ไลบรารี Machine Learning
 - [FastAPI](https://fastapi.tiangolo.com/) - Web Framework
 
+## 📄 License
+
+โปรเจกต์นี้ได้รับอนุญาตภายใต้ MIT License - ดูรายละเอียดเพิ่มเติมได้ที่ไฟล์ [LICENSE](LICENSE)
+
 ---
 <div align="center">
 Made with ❤️ in Thailand
