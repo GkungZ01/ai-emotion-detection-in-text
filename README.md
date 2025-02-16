@@ -33,7 +33,7 @@
 1. Clone repository:
 
 ```bash
-git clone https://github.com/yourusername/thai-emotion-detection.git
+git clone https://github.com/GkungZ01/ai-emotion-detection-in-text.git
 cd thai-emotion-detection
 ```
 
@@ -69,7 +69,7 @@ python main.py
 4. เรียกใช้ API:
 
 ```bash
-curl -X GET "http://localhost:9959/?text=base64encodedtext"
+curl -X GET "http://localhost:9959/?text=[Message]"
 ```
 
 ### รูปแบบข้อมูลสำหรับเทรนโมเดล
