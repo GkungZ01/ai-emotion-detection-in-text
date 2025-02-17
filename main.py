@@ -9,12 +9,26 @@ import pythainlp
 import pandas as pd
 import base64
 from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.naive_bayes import MultinomialNB
 import uvicorn
 
 # สร้าง FastAPI application instance
 app = FastAPI()
+
+origins = [
+    "http://localhost",
+    "http://localhost:8080",
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 # สร้างลิสต์สำหรับเก็บข้อความและอารมณ์
 texts = []
