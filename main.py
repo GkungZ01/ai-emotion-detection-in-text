@@ -98,4 +98,4 @@ async def root(text: str):
 # ถ้ารันไฟล์นี้โดยตรง (ไม่ได้ถูก import ไปใช้ที่อื่น)
 if __name__ == "__main__":
     # รัน FastAPI server ที่ localhost port 9959
-    uvicorn.run(app, host="localhost", port=9959)
+    uvicorn.run(app, host="0.0.0.0", port=9959)
