@@ -15,7 +15,7 @@ app = FastAPI()
 origins = [
     "http://localhost",
     "http://localhost:3000",
-    
+    "api-emotion-detection.hoshizora.online"
 ]
 
 # กำหนด middleware เพื่อจัดการ CORS
