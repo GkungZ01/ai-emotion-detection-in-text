@@ -30,7 +30,6 @@ app.add_middleware(
 texts = []
 labels = []
 
-
 def importDataSetCsv(filename: str, text_column: str, emotions_column: str, emotions_keys: list | dict | None = None):
     """
     ฟังก์ชันสำหรับนำเข้าข้อมูลจากไฟล์ CSV เพื่อนำไปใช้ในการฝึกโมเดล
@@ -54,7 +53,6 @@ def importDataSetCsv(filename: str, text_column: str, emotions_column: str, emot
                 # เพิ่มค่าอารมณ์ลงในลิสต์
                 labels.append(row[emotions_column].lower())
 
-
 # นำเข้าข้อมูลจากไฟล์ CSV ที่ใช้สำหรับฝึกโมเดล
 importDataSetCsv("eng", "Comment", "Emotion")  # ข้อมูลภาษาอังกฤษชุดที่ 1
 importDataSetCsv("eng2", "text", "label")  # ข้อมูลภาษาอังกฤษชุดที่ 2
@@ -74,7 +72,6 @@ model = MultinomialNB()
 
 # เทรนโมเดลด้วยข้อมูลที่เตรียมไว้
 model.fit(X, labels)
-
 
 @app.get("/")
 async def root(text: str):
