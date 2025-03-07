@@ -45,7 +45,7 @@ def importDataSetCsv(filename: str, text_column: str, emotions_column: str, emot
         reader = pd.read_csv(f, encoding="utf-8")
 
         # วนลูปอ่านข้อมูลแต่ละแถว และเพิ่มลงในลิสต์ texts และ labels
-        for index, row in reader.iterrows():
+        for _, row in reader.iterrows():
             texts.append(row[text_column])  # เพิ่มข้อความลงในลิสต์
             if emotions_keys:
                 # แปลงค่าอารมณ์ (ถ้ามี keys)
